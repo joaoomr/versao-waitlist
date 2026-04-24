@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { WaitlistModal } from "@/components/waitlist-modal";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Listener global do evento soci:waitlist — precisa estar em todo
+            layout (landing, institutional e app) */}
+        <WaitlistModal />
+      </body>
     </html>
   );
 }

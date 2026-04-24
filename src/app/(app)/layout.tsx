@@ -1,6 +1,5 @@
 import { Sidebar } from "@/components/layout/sidebar";
 import { MobileNav } from "@/components/layout/mobile-nav";
-import { WaitlistModal } from "@/components/waitlist-modal";
 import { MOCK_CURRENT_USER, MOCK_NOTIFICATIONS } from "@/lib/mock-data";
 
 export default async function AppLayout({
@@ -23,7 +22,6 @@ export default async function AppLayout({
       />
       <main className="p-4 pb-20 lg:ml-60 lg:p-8 lg:pb-8">{children}</main>
       <MobileNav />
-      <WaitlistModal />
     </div>
   );
 }
