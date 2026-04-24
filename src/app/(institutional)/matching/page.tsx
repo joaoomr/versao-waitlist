@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui";
+import { WaitlistCtaButton } from "@/components/ui";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -178,9 +178,7 @@ export default function MatchingPage() {
               Crie sua conta, complete seu perfil e comece a descobrir conexoes
               que realmente fazem sentido para sua carreira.
             </p>
-            <Link href="/cadastro" className="mt-8 inline-block">
-              <Button size="lg">Comece agora</Button>
-            </Link>
+            <WaitlistCtaButton size="lg" className="mt-8">Comece agora</WaitlistCtaButton>
           </div>
         </div>
       </section>

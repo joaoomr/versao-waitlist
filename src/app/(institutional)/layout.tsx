@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui";
+import { WaitlistCtaButton } from "@/components/ui";
 
 export default function InstitutionalLayout({
   children,
@@ -26,12 +26,8 @@ export default function InstitutionalLayout({
             <Link href="/faq" className="text-sm text-body hover:text-heading transition-colors">FAQ</Link>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/login">
-              <Button variant="secondary" size="sm">Entrar</Button>
-            </Link>
-            <Link href="/cadastro">
-              <Button size="sm">Criar conta</Button>
-            </Link>
+            <WaitlistCtaButton variant="secondary" size="sm">Entrar</WaitlistCtaButton>
+            <WaitlistCtaButton size="sm">Criar conta</WaitlistCtaButton>
           </div>
         </div>
       </nav>

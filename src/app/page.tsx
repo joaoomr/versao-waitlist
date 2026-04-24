@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui";
+import { WaitlistCtaButton } from "@/components/ui";
 
 export default function LandingPage() {
   return (
@@ -22,12 +22,8 @@ export default function LandingPage() {
             <Link href="/faq" className="text-sm text-body hover:text-heading transition-colors">FAQ</Link>
           </div>
           <div className="flex items-center gap-3">
-            <Link href="/login">
-              <Button variant="secondary" size="sm">Entrar</Button>
-            </Link>
-            <Link href="/cadastro">
-              <Button size="sm">Criar conta</Button>
-            </Link>
+            <WaitlistCtaButton variant="secondary" size="sm">Entrar</WaitlistCtaButton>
+            <WaitlistCtaButton size="sm">Criar conta</WaitlistCtaButton>
           </div>
         </div>
       </nav>
@@ -55,15 +51,13 @@ export default function LandingPage() {
               </p>
 
               <div className="mt-8 flex items-center gap-4">
-                <Link href="/cadastro">
-                  <Button size="lg">
-                    Comece a se conectar
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </Button>
-                </Link>
+                <WaitlistCtaButton size="lg">
+                  Comece a se conectar
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </WaitlistCtaButton>
                 <Link href="/matching" className="text-sm font-medium text-accent hover:text-primary transition-colors">
                   Como funciona o matching
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline ml-1">
@@ -232,9 +226,7 @@ export default function LandingPage() {
                   Junte-se a profissionais que estao transformando suas redes em
                   oportunidades reais.
                 </p>
-                <Link href="/cadastro" className="mt-8 inline-block">
-                  <Button size="lg">Criar minha conta</Button>
-                </Link>
+                <WaitlistCtaButton size="lg" className="mt-8">Criar minha conta</WaitlistCtaButton>
               </div>
             </div>
           </div>

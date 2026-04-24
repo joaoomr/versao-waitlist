@@ -6,3 +6,4 @@ export { EmptyState } from "./empty-state";
 export { Input } from "./input";
 export { SearchableTagList } from "./searchable-tag-list";
 export { Textarea } from "./textarea";
+export { WaitlistCtaButton } from "./waitlist-cta";
