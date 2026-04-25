@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { WaitlistCtaButton } from "@/components/ui";
 
 export const metadata: Metadata = {
   title: "Como Funciona — Soci",
@@ -155,7 +154,12 @@ export default function ComoFuncionaPage() {
           Deixe de depender apenas de indicacoes aleatorias. Com a Soci, voce
           encontra as pessoas certas no momento certo.
         </p>
-        <WaitlistCtaButton size="lg" className="mt-6">Comece agora</WaitlistCtaButton>
+        <Link
+          href="/feed"
+          className="mt-6 inline-flex h-12 items-center justify-center gap-2 rounded-[var(--radius-button)] bg-gradient-to-br from-primary to-primary-hover px-8 text-base font-semibold text-white shadow-[0_4px_12px_rgba(37,99,235,0.3)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+        >
+          Comece agora
+        </Link>
       </section>
 
       {/* 3 Steps */}

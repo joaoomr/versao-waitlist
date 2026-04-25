@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { WaitlistCtaButton } from "@/components/ui";
 
 export default function InstitutionalLayout({
   children,
@@ -26,8 +25,18 @@ export default function InstitutionalLayout({
             <Link href="/faq" className="text-sm text-body hover:text-heading transition-colors">FAQ</Link>
           </div>
           <div className="flex items-center gap-3">
-            <WaitlistCtaButton variant="secondary" size="sm">Entrar</WaitlistCtaButton>
-            <WaitlistCtaButton size="sm">Criar conta</WaitlistCtaButton>
+            <Link
+              href="/feed"
+              className="inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-border bg-transparent px-4 text-sm text-heading transition-colors hover:bg-bg-card focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            >
+              Entrar
+            </Link>
+            <Link
+              href="/feed"
+              className="inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-gradient-to-br from-primary to-primary-hover px-4 text-sm text-white shadow-[0_4px_12px_rgba(37,99,235,0.3)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            >
+              Criar conta
+            </Link>
           </div>
         </div>
       </nav>
